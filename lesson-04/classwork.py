@@ -1,3 +1,10 @@
-my_list = ['s', 'o', 'l', 'u', 't', '1', '0', 'n']
-my_string = "".join(map(str, my_list[::-1]))
-print(my_string)
+import random
+my_list = []
+
+for _ in range(10):
+    my_list.append(random.randint(0, 100))
+for element in my_list:
+    if element > 10:
+        my_sum = my_sum + element
+
+print(my_sum)
