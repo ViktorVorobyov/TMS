@@ -13,3 +13,6 @@ def from_eng_to_rus(eng):
      rus = dictonary[eng]
      return rus
 
+#solution-01
+
+new_text= text.replase('.', ',', ':')
