@@ -1,4 +1,7 @@
-def search_min_and_max (*args, **kwargs):
+import random
+
+
+def search_min_and_max(*args, **kwargs):
     func_type = kwargs["func_type"]
     min_el = args[0]
     max_el = args[0]
@@ -12,8 +15,14 @@ def search_min_and_max (*args, **kwargs):
     if func_type == "max":
         return max_el
 
+
 random_elements = []
 for _ in range(10):
     random_el = random.randint(1, 100)
     random_elements.append(random_el)
 
+min_el = search_min_and_max(*random_elements, func_type="min")
+print(min_el)
+
+max_el = search_min_and_max(*random_elements, func_type="max")
+print(max_el)
